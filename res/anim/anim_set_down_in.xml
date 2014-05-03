@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 浮动框从下向上出现 -->
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:zAdjustment="top"
+    >
+	<translate android:fromYDelta="17%p" android:toYDelta="0%p" 
+	    android:duration="300"/>
+	<alpha android:fromAlpha="1.0" android:toAlpha="1.0" 
+	    android:duration="300" />
+</set>

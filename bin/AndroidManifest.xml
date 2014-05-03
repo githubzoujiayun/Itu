@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.lance.itu.main"
+    android:sharedUserId="org.lance.itu.main"
+    android:versionCode="1"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <!-- 百度地图key -->
+        <meta-data 
+            android:name="baidu_key"
+            android:value="qZm7jmnVNGFN1R6o55OzYd4R"
+            />
+        <activity
+            android:name=".ItuActivity"
+            android:launchMode="singleTop"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LocationActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".AlbumActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".DeletePhonectivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".ImageFilterActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".ImageFilterCropActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".ImageFilterEffectActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".ImageFilterFaceActivity"
+            android:configChanges="keyboardHidden|orientation"
+   		     />
+        <activity android:name=".ImageFilterFrameActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".PhoneAlbumActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".VoiceActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".FileBrowseActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".FilePasteActivity"
+            android:configChanges="keyboardHidden|orientation"
+             />
+        <activity android:name=".ShareActivity"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:configChanges="keyboardHidden|orientation"
+             >
+            <meta-data android:name="tencent_weibo_key" 
+                android:value="801483681" />
+            <meta-data android:name="tencent_weibo_secret" 
+                android:value="4f6f0c344974bc3e849c7fe72457bd9a" />
+        </activity>
+        
+        <!-- QQ互联认证页面 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent101030594" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.tencent.connect.avatar.ImageActivity" />
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait" />
+        
+        <!-- 腾讯微博调用的界面web认证界面 -->
+        <activity  android:name="com.tencent.weibo.webview.OAuthV2AuthorizeWebView" />
+    </application>
+    <!-- 禁用键盘锁的权限 -->
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.BLUETOOTH"  />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"  />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<!-- 修改文件系统 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+	
+	<uses-permission android:name="android.permission.RESTART_PACKAGES" />
+	
+	<uses-permission android:name="android.permission.GET_TASKS"/>
+	<uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+	<!-- 保留唤醒状态权限 -->
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	
+	<uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+	<!-- 修改sd卡权限访问文件系统权限 -->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+	<!-- 授予使用外部存储器的权限 -->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<!-- 允许访问有关GSM有关信息 -->
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+	<!-- 允许访问精良定位 -->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+	<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS" />
+	<!-- 允许访问振动器 -->
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- apk静默安装需要的权限 -->
+    <!-- <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.DELETE_PACKAGES" />
+    <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" /> -->
+    <!-- 这个地方需要测试下 -->
+    <permission android:name="com.wallinter.main.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+  
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.wallinter.main.permission.JPUSH_MESSAGE" />
+    
+	<supports-screens
+        android:anyDensity="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+         />
+
+</manifest>

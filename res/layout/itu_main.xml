@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/black_dot_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dip"
+            android:background="@drawable/image_filter_title_bg"
+            android:gravity="center_vertical" >
+
+            <Button
+                android:id="@+id/itu_handle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:background="@drawable/image_filter_title_text_btn_bg"
+                android:text="已保存"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:text="艾图(相册)"
+                    android:textColor="#ffffff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/itu_image_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/image_filter_title_text_btn_bg"
+                android:text="所有图片"
+                android:textColor="#ffffff"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/black_dot_bg" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <GridView
+                android:id="@+id/itu_grid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:gravity="center"
+                android:horizontalSpacing="8dip"
+                android:listSelector="#00000000"
+                android:numColumns="4"
+                android:padding="8dip"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="8dip" >
+            </GridView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/itu_browse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/image_filter_title_text_btn_bg"
+        android:text="浏览文件..."
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/sidebar_icon_left"
+        android:gravity="center"
+        android:text="从这里开始"
+        android:visibility="gone"
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <include
+        android:id="@+id/desktop_ugc"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/ugc_menu_layout" />
+
+</RelativeLayout>

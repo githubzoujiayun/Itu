@@ -1,0 +1,67 @@
+# view res/layout/branch_main.xml #generated:20
+-keep class com.baidu.mapapi.map.MapView { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.tencent.connect.avatar.ImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.tencent.connect.common.AssistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.tencent.tauth.AuthActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:97
+-keep class com.tencent.weibo.webview.OAuthV2AuthorizeWebView { <init>(...); }
+
+# view AndroidManifest.xml #generated:36
+-keep class org.lance.itu.main.AlbumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class org.lance.itu.main.DeletePhonectivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class org.lance.itu.main.FileBrowseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:66
+-keep class org.lance.itu.main.FilePasteActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class org.lance.itu.main.ImageFilterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class org.lance.itu.main.ImageFilterCropActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:48
+-keep class org.lance.itu.main.ImageFilterEffectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class org.lance.itu.main.ImageFilterFaceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class org.lance.itu.main.ImageFilterFrameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:22
+-keep class org.lance.itu.main.ItuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class org.lance.itu.main.LocationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:57
+-keep class org.lance.itu.main.PhoneAlbumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class org.lance.itu.main.ShareActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:60
+-keep class org.lance.itu.main.VoiceActivity { <init>(...); }
+
+# view res/layout/imagefilter_crop_activity.xml #generated:56
+-keep class org.lance.itu.ui.CropImageView { <init>(...); }
+
+# view res/layout/imagefilter_face_activity.xml #generated:58
+-keep class org.lance.itu.ui.FaceImageView { <init>(...); }
+
+# onClick res/layout/top_bar_back.xml #generated:11
+# onClick res/layout/top_bar_right.xml #generated:11
+-keepclassmembers class * { *** back(...); }
+
